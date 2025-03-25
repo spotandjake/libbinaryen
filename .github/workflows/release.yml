@@ -7,7 +7,7 @@ on:
 jobs:
   release-please:
     name: Create Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
       tag_name: ${{ steps.release.outputs.tag_name }}
@@ -34,7 +34,7 @@ jobs:
           brew install git-archive-all
 
       - name: Checkout code
-        uses: actions/checkout@v3.5.3
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           submodules: "recursive"
 
@@ -54,7 +54,7 @@ jobs:
   opam-release:
     needs: [release-please, add-archive]
     name: Publish to opam registry
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Setup bot user
         run: |
@@ -82,29 +82,27 @@ jobs:
           echo -n "$CHANGES" > CHANGES.md
 
       - name: Setup OCaml
-        uses: ocaml/setup-ocaml@v2
+        uses: ocaml/setup-ocaml@c2e6bb92370612b89f302c3aaefa1da45ee2d702 # v3.2.15
         with:
           ocaml-compiler: 4.14.0
 
-      # Version 2.1.0 of opam-publish doesn't respect OPAMYES=1
-      # Ref https://github.com/ocaml-opam/opam-publish/issues/132#issuecomment-963616802
       - name: Install publish utils
         run: |
-          opam install opam-publish=2.0.3
+          opam install opam-publish=2.4.0
 
       - name: Publish to opam
         run: |
-          opam publish --no-browser --msg-file=CHANGES.md ${{ needs.add-archive.outputs.browser_download_url }}
+          opam publish --no-confirmation --no-browser --msg-file=CHANGES.md ${{ needs.add-archive.outputs.browser_download_url }}
 
   npm-release:
     needs: [add-archive]
     name: Publish to npm registry
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Setup NodeJS
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
         with:
-          node-version: "16"
+          node-version: "22"
           registry-url: "https://registry.npmjs.org"
 
       - name: Publish to npm
