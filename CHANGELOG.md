@@ -1,5 +1,89 @@
 # Changelog
 
+## [101.0.0](https://github.com/spotandjake/libbinaryen/compare/v121.0.0...v101.0.0) (2025-03-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for OCaml 4.12
+* Upgrade to Binaryen v121 ([#101](https://github.com/spotandjake/libbinaryen/issues/101))
+* Upgrade to Binaryen v120 ([#100](https://github.com/spotandjake/libbinaryen/issues/100))
+* Upgrade to Binaryen v119 ([#95](https://github.com/spotandjake/libbinaryen/issues/95))
+* Upgrade to Binaryen v118
+* Upgrade to Binaryen v117 ([#93](https://github.com/spotandjake/libbinaryen/issues/93))
+* Upgrade to Binaryen v116 ([#92](https://github.com/spotandjake/libbinaryen/issues/92))
+* Update to libbinaryen v115 ([#90](https://github.com/spotandjake/libbinaryen/issues/90))
+* Upgrade to libbinaryen v114 ([#87](https://github.com/spotandjake/libbinaryen/issues/87))
+* Upgrade to libbinaryen v113 ([#83](https://github.com/spotandjake/libbinaryen/issues/83))
+* Upgrade to libbinaryen v112 ([#81](https://github.com/spotandjake/libbinaryen/issues/81))
+* Upgrade to libbinaryen v111 ([#75](https://github.com/spotandjake/libbinaryen/issues/75))
+* Require dune 3.0 to better support js_of_ocaml
+* Require js_of_ocaml 4.1 to ensure optimization fix
+* Update binaryen to version_110 ([#72](https://github.com/spotandjake/libbinaryen/issues/72))
+* Update binaryen to version_109 ([#65](https://github.com/spotandjake/libbinaryen/issues/65))
+* Change js_of_ocaml binding to Binaryen
+* Avoid building tools
+* Update binaryen to version_108 ([#62](https://github.com/spotandjake/libbinaryen/issues/62))
+* Update binaryen to version_107 ([#57](https://github.com/spotandjake/libbinaryen/issues/57))
+* Update binaryen to version_106 ([#55](https://github.com/spotandjake/libbinaryen/issues/55))
+* Upgrade binaryen to version_105 ([#46](https://github.com/spotandjake/libbinaryen/issues/46))
+* Update binaryen to version_104
+* Bump binaryen to version_103 ([#24](https://github.com/spotandjake/libbinaryen/issues/24))
+* Bump binaryen to version_102 ([#20](https://github.com/spotandjake/libbinaryen/issues/20))
+
+### Features
+
+* Bump binaryen to version_102 ([#20](https://github.com/spotandjake/libbinaryen/issues/20)) ([5e147d7](https://github.com/spotandjake/libbinaryen/commit/5e147d7ff767b21cacdacd786eb1e6860394925c))
+* Bump binaryen to version_103 ([#24](https://github.com/spotandjake/libbinaryen/issues/24)) ([aa8a42d](https://github.com/spotandjake/libbinaryen/commit/aa8a42dd4c55065d5f7b27b813573d137c1dde08))
+* Initial implementation ([#1](https://github.com/spotandjake/libbinaryen/issues/1)) ([9da8c77](https://github.com/spotandjake/libbinaryen/commit/9da8c770c7ead5b74bab70efbd94c8e763716ec3))
+* Provide binaryen.js with library ([#48](https://github.com/spotandjake/libbinaryen/issues/48)) ([f389527](https://github.com/spotandjake/libbinaryen/commit/f389527a95ff845996e2ecaa5118c4bbe30a1ab9))
+* Relax the js_of_ocaml version range ([#78](https://github.com/spotandjake/libbinaryen/issues/78)) ([5863fe7](https://github.com/spotandjake/libbinaryen/commit/5863fe790b831c6e3888ce353598911ff17777c2))
+* Remove unnecessary conf-python-3 dependency ([e1d386e](https://github.com/spotandjake/libbinaryen/commit/e1d386e3c8f219ecf8f3c50064302b818e5bd951))
+* Support OCaml 5 ([bad98c6](https://github.com/spotandjake/libbinaryen/commit/bad98c67e44b0edbf177055ccb5d9bca562be6ec))
+* Update binaryen to version_104 ([8106ec5](https://github.com/spotandjake/libbinaryen/commit/8106ec5af48871a09f618807ab7d2373a6f8c572))
+* Update binaryen to version_104 ([#42](https://github.com/spotandjake/libbinaryen/issues/42)) ([2000604](https://github.com/spotandjake/libbinaryen/commit/20006049db29f5256c69524821af2424484e0448))
+* Update binaryen to version_106 ([#55](https://github.com/spotandjake/libbinaryen/issues/55)) ([5fd7257](https://github.com/spotandjake/libbinaryen/commit/5fd725751594e42d7beb62f054a6d7d969bca96e))
+* Update binaryen to version_107 ([#57](https://github.com/spotandjake/libbinaryen/issues/57)) ([48090d5](https://github.com/spotandjake/libbinaryen/commit/48090d541df71df4a13766543beca7a5b559c10f))
+* Update binaryen to version_108 ([#62](https://github.com/spotandjake/libbinaryen/issues/62)) ([1e69a07](https://github.com/spotandjake/libbinaryen/commit/1e69a071c6cb905dd8d8e1b86957222f29243ed0))
+* Update binaryen to version_109 ([#65](https://github.com/spotandjake/libbinaryen/issues/65)) ([f79c848](https://github.com/spotandjake/libbinaryen/commit/f79c84871122d40c4dacbb2f9db8c40657b85677))
+* Update binaryen to version_110 ([#72](https://github.com/spotandjake/libbinaryen/issues/72)) ([008d8ff](https://github.com/spotandjake/libbinaryen/commit/008d8ffa7431a0190b05db9b33a15c52044435c2))
+* Update to libbinaryen v115 ([#90](https://github.com/spotandjake/libbinaryen/issues/90)) ([4f4a03c](https://github.com/spotandjake/libbinaryen/commit/4f4a03c8227ded32ab719daa6121a80bfbe2e640))
+* Upgrade binaryen to version_105 ([#46](https://github.com/spotandjake/libbinaryen/issues/46)) ([e1d386e](https://github.com/spotandjake/libbinaryen/commit/e1d386e3c8f219ecf8f3c50064302b818e5bd951))
+* Upgrade to Binaryen v116 ([#92](https://github.com/spotandjake/libbinaryen/issues/92)) ([7f9308d](https://github.com/spotandjake/libbinaryen/commit/7f9308d15601ad989a89f619e5818056d0d872a0))
+* Upgrade to Binaryen v117 ([#93](https://github.com/spotandjake/libbinaryen/issues/93)) ([ea58318](https://github.com/spotandjake/libbinaryen/commit/ea58318ef23a7d59b61d149f387286fcedd92d86))
+* Upgrade to Binaryen v118 ([bf51e2c](https://github.com/spotandjake/libbinaryen/commit/bf51e2ca7e117822db160878fc73d238beb9adb9))
+* Upgrade to Binaryen v119 ([#95](https://github.com/spotandjake/libbinaryen/issues/95)) ([5cd6dc5](https://github.com/spotandjake/libbinaryen/commit/5cd6dc54817122ded9f22209c81294611544628d))
+* Upgrade to Binaryen v120 ([#100](https://github.com/spotandjake/libbinaryen/issues/100)) ([93c0281](https://github.com/spotandjake/libbinaryen/commit/93c0281a38b196b14a3e2a6148b0ae335388c077))
+* Upgrade to Binaryen v121 ([#101](https://github.com/spotandjake/libbinaryen/issues/101)) ([cc960c8](https://github.com/spotandjake/libbinaryen/commit/cc960c86c559ab6c86a5d9c529a0416c029d480e))
+* Upgrade to libbinaryen v111 ([#75](https://github.com/spotandjake/libbinaryen/issues/75)) ([e43a7ff](https://github.com/spotandjake/libbinaryen/commit/e43a7ffeb865034a3fbf6584b434eae890f980e5))
+* Upgrade to libbinaryen v112 ([#81](https://github.com/spotandjake/libbinaryen/issues/81)) ([541f674](https://github.com/spotandjake/libbinaryen/commit/541f674f6047ada25a88d666714d3266d5a38bd0))
+* Upgrade to libbinaryen v113 ([#83](https://github.com/spotandjake/libbinaryen/issues/83)) ([f19e9a9](https://github.com/spotandjake/libbinaryen/commit/f19e9a95c7c4300e99ba72b3b1658e28f8379e13))
+* Upgrade to libbinaryen v114 ([#87](https://github.com/spotandjake/libbinaryen/issues/87)) ([cb7574b](https://github.com/spotandjake/libbinaryen/commit/cb7574b2442aea58e8150200018b105ed67ee783))
+
+
+### Bug Fixes
+
+* Always have a target non-Windows/non-MacOS ([#17](https://github.com/spotandjake/libbinaryen/issues/17)) ([fac9d36](https://github.com/spotandjake/libbinaryen/commit/fac9d36e5ddbfa7aaa7cc86344e53d716ae98c60))
+* Build binaryen in source & avoid cmake --install ([4f67d9a](https://github.com/spotandjake/libbinaryen/commit/4f67d9a849b172874a52dcfddf691efc274cb044))
+* Copy wasm-delegations.def into the correct location ([#28](https://github.com/spotandjake/libbinaryen/issues/28)) ([#31](https://github.com/spotandjake/libbinaryen/issues/31)) ([bc0c7ee](https://github.com/spotandjake/libbinaryen/commit/bc0c7ee35de32c90b52cd73a28e5e5eccfd28a3f))
+* Disable the maybe-uninitialized error in newer gcc ([#69](https://github.com/spotandjake/libbinaryen/issues/69)) ([2b6834a](https://github.com/spotandjake/libbinaryen/commit/2b6834ad6d5fb19618b4a234ae133ddd6918e275))
+* Ensure project can build with Opam on Windows ([#33](https://github.com/spotandjake/libbinaryen/issues/33)) ([#35](https://github.com/spotandjake/libbinaryen/issues/35)) ([cf3a72e](https://github.com/spotandjake/libbinaryen/commit/cf3a72e931dc5323eb901955f4121a9266bdf7a5))
+* **opam:** Add conf-python-3 & ocaml ([4f67d9a](https://github.com/spotandjake/libbinaryen/commit/4f67d9a849b172874a52dcfddf691efc274cb044))
+* Remove library_flags & only specify c_library_flags where needed ([#41](https://github.com/spotandjake/libbinaryen/issues/41)) ([a89fad6](https://github.com/spotandjake/libbinaryen/commit/a89fad610435b327df333cb0ef687087be0fd536))
+* Remove upper bounds on dependencies ([#60](https://github.com/spotandjake/libbinaryen/issues/60)) ([3a75c23](https://github.com/spotandjake/libbinaryen/commit/3a75c23941e1387d07a686dfa06266f517100c8f))
+* Run cmake build with -j4 for faster builds ([a89fad6](https://github.com/spotandjake/libbinaryen/commit/a89fad610435b327df333cb0ef687087be0fd536))
+* Use double dash before -j4 to always pass through ([#39](https://github.com/spotandjake/libbinaryen/issues/39)) ([a89fad6](https://github.com/spotandjake/libbinaryen/commit/a89fad610435b327df333cb0ef687087be0fd536))
+
+
+### Miscellaneous Chores
+
+* Avoid building tools ([1e69a07](https://github.com/spotandjake/libbinaryen/commit/1e69a071c6cb905dd8d8e1b86957222f29243ed0))
+* Change js_of_ocaml binding to Binaryen ([1e69a07](https://github.com/spotandjake/libbinaryen/commit/1e69a071c6cb905dd8d8e1b86957222f29243ed0))
+* **ci:** Fix release branch name ([#2](https://github.com/spotandjake/libbinaryen/issues/2)) ([a543459](https://github.com/spotandjake/libbinaryen/commit/a543459cc7f2313318e0b5ec7f48bb901f67dbfb))
+* Drop support for OCaml 4.12 ([bad98c6](https://github.com/spotandjake/libbinaryen/commit/bad98c67e44b0edbf177055ccb5d9bca562be6ec))
+* Require dune 3.0 to better support js_of_ocaml ([008d8ff](https://github.com/spotandjake/libbinaryen/commit/008d8ffa7431a0190b05db9b33a15c52044435c2))
+* Require js_of_ocaml 4.1 to ensure optimization fix ([008d8ff](https://github.com/spotandjake/libbinaryen/commit/008d8ffa7431a0190b05db9b33a15c52044435c2))
+
 ## [121.0.0](https://github.com/grain-lang/libbinaryen/compare/v120.0.0...v121.0.0) (2025-03-04)
 
 
