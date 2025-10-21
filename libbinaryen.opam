@@ -12,6 +12,7 @@ build: [
   [ "dune" "build" "-p" name "-j" jobs ]
 ]
 depends: [
+  "cmdliner" {< "2.0.0"}
   "conf-cmake" {build}
   "dune" {>= "3.0.0"}
   "dune-configurator" {>= "3.0.0"}
