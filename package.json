@@ -6,8 +6,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "ocaml": ">= 4.13.0 < 5.4.0",
-    "@opam/conf-cmake": "grain-lang/cmake:esy.json#dbb594e3fd388ac94262c133a35f280d7630d806",
-    "@opam/conf-ninja": "spotandjake/ninja:esy.json#47af0ffda89920f680eeb2f182c17318d01223de",
+    "@opam/conf-cmake": "spotandjake/cmake:esy.json#fe7c168e28b93a8732a6003857c4b0e844f7ad17",
+    "@opam/conf-ninja": "spotandjake/ninja:esy.json#abb573fc1de042916a19c3b6dd145ea851eede28",
     "@opam/dune": ">= 3.0.0",
     "@opam/dune-configurator": ">= 3.0.0"
   },
